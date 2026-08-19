@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Freestack Selfhosted Category",
+  "description": "Schema for a selfhosted category file's YAML frontmatter",
+  "type": "object",
+  "required": ["category", "description"],
+  "properties": {
+    "category": {
+      "type": "string",
+      "description": "Category display name"
+    },
+    "description": {
+      "type": "string",
+      "description": "One-line category description",
+      "maxLength": 200
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "entry_table_fields": {
+      "description": "Standard fields expected in each ## entry's info table (validated by script, not by JSON Schema directly since they live in Markdown tables)",
+      "type": "object",
+      "required": ["Deploy", "License", "Maintained"],
+      "properties": {
+        "Deploy": {
+          "description": "Deployment methods: docker, compose, helm, binary, package, source, ansible, nixos",
+          "type": "string"
+        },
+        "Image": {
+          "description": "Container image reference (if applicable)",
+          "type": "string"
+        },
+        "Resource": {
+          "description": "Resource tier and ballpark RAM: light (<256MB), medium (256MB-1GB), heavy (>1GB)",
+          "type": "string"
+        },
+        "Auth": {
+          "description": "Authentication methods: oidc, ldap, saml, oauth2, built-in, none, header",
+          "type": "string"
+        },
+        "Reverse proxy": {
+          "description": "Whether it works behind a reverse proxy",
+          "type": "string",
+          "enum": ["✓", "✗", "partial"]
+        },
+        "Config": {
+          "description": "Configuration method: env vars, config file, UI, API",
+          "type": "string"
+        },
+        "Backup": {
+          "description": "Brief backup approach",
+          "type": "string"
+        },
+        "License": {
+          "description": "SPDX license identifier",
+          "type": "string"
+        },
+        "Maintained": {
+          "description": "Project health: active, maintenance, stale, archived",
+          "type": "string",
+          "enum": ["active", "maintenance", "stale", "archived"]
+        },
+        "URL": {
+          "description": "Project homepage",
+          "type": "string",
+          "format": "uri"
+        },
+        "Source": {
+          "description": "Source code URL",
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    }
+  }
+}

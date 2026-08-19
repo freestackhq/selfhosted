@@ -1,0 +1,58 @@
+name: New entry suggestion
+description: Suggest a service to add to the catalog
+title: "[Entry] "
+labels: ["new-entry"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Service name
+      placeholder: e.g. Paperless-ngx
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Project URL
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Development
+        - Media
+        - Security & Identity
+        - Networking
+        - Monitoring
+        - Photos
+        - Documents
+        - Home Automation
+        - Communication
+        - Other (specify below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why should this be included?
+      description: What makes it worth comparing? What does it replace or compete with?
+    validations:
+      required: true
+
+  - type: input
+    id: deploy
+    attributes:
+      label: Deploy methods
+      placeholder: docker, compose, binary, helm, etc.
+
+  - type: input
+    id: alternatives
+    attributes:
+      label: Known alternatives
+      placeholder: e.g. competes with X, Y, Z

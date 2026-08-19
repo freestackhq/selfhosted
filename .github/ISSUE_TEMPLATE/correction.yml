@@ -1,0 +1,26 @@
+name: Correction
+description: Report incorrect information in an existing entry
+title: "[Fix] "
+labels: ["correction"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Which entry?
+      placeholder: e.g. Forgejo in development.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What's wrong?
+      description: Describe the incorrect information and what it should be.
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source for correction
+      placeholder: Link to docs, release notes, etc.

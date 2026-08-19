@@ -1,0 +1,18 @@
+repos:
+  - repo: pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+      - id: end-of-file-fixer
+      - id: check-yaml
+
+  - repo: local
+    hooks:
+      - id: validate-entries
+        name: Validate catalog entries
+        entry: node scripts/validate.js
+        language: node
+        additional_dependencies: ["ajv@8.17.1", "gray-matter@4.0.3"]
+        pass_filenames: false
+        always_run: true
