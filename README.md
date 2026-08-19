@@ -44,12 +44,36 @@ Each file contains:
 
 | File | What's in it |
 |------|-------------|
-| [development.md](development.md) | Git forges, CI/CD |
-| [media.md](media.md) | Media servers, music streaming |
-| [security-identity.md](security-identity.md) | IdPs, auth proxies, password managers |
-| [networking.md](networking.md) | Reverse proxies, DNS, ad blocking |
-| [monitoring.md](monitoring.md) | Uptime, metrics, dashboards |
-| [photos.md](photos.md) | Photo/video management |
+| [analytics.md](analytics.md) | Web/product analytics (Plausible, Umami, Matomo, PostHog) |
+| [automation.md](automation.md) | Workflow automation (n8n, Node-RED, Activepieces, Huginn) |
+| [backup.md](backup.md) | Backup solutions (Restic, BorgBackup, Duplicati, Kopia) |
+| [calendar-crm.md](calendar-crm.md) | CalDAV, scheduling, CRM (Radicale, Cal.com, Twenty) |
+| [cms-blogs.md](cms-blogs.md) | CMS and blogging (WordPress, Ghost, Hugo, Strapi) |
+| [communication.md](communication.md) | Chat and video (Matrix, Rocket.Chat, Jitsi, Zulip) |
+| [containers.md](containers.md) | Container management (Portainer, Coolify, Dockge, CasaOS) |
+| [dashboards.md](dashboards.md) | Homepages/startpages (Homarr, Homepage, Dashy, Homer, Glance) |
+| [databases.md](databases.md) | Databases and admin tools (PostgreSQL, MariaDB, Valkey, Adminer) |
+| [development.md](development.md) | Git forges (Forgejo, Gitea, GitLab CE) |
+| [documents.md](documents.md) | Document management (Paperless-ngx, Stirling-PDF, BookStack, Outline) |
+| [ecommerce.md](ecommerce.md) | Online stores (WooCommerce, Saleor, Medusa, PrestaShop) |
+| [email.md](email.md) | Mail servers and webmail (Stalwart, docker-mailserver, Mailu, Roundcube) |
+| [feeds-bookmarks.md](feeds-bookmarks.md) | RSS and bookmarks (FreshRSS, Miniflux, Linkwarden, Wallabag) |
+| [file-sync.md](file-sync.md) | File sync and storage (Nextcloud, Syncthing, Seafile, MinIO) |
+| [finance.md](finance.md) | Personal finance (Actual, Firefly III, Ghostfolio) |
+| [games.md](games.md) | Game servers (Pelican Panel, Crafty, Sunshine, LinuxGSM) |
+| [home-automation.md](home-automation.md) | Smart home (Home Assistant, openHAB, Node-RED) |
+| [media-management.md](media-management.md) | Media automation (Sonarr, Radarr, Prowlarr, Bazarr) |
+| [media.md](media.md) | Media servers (Jellyfin, Plex, Navidrome) |
+| [monitoring.md](monitoring.md) | Uptime and metrics (Uptime Kuma, Grafana, Prometheus) |
+| [networking.md](networking.md) | Reverse proxies, DNS (NPM, Traefik, Pi-hole, AdGuard Home) |
+| [notes-wiki.md](notes-wiki.md) | Notes and wikis (SilverBullet, Joplin, Memos, Wiki.js, HedgeDoc) |
+| [photos.md](photos.md) | Photo management (Immich, PhotoPrism) |
+| [recipes.md](recipes.md) | Recipe management (Mealie, Tandoor, RecipeSage) |
+| [search.md](search.md) | Search engines (Meilisearch, SearXNG, Typesense, OpenSearch) |
+| [security-identity.md](security-identity.md) | Auth and identity (Authentik, Keycloak, Authelia, Vaultwarden) |
+| [tasks-projects.md](tasks-projects.md) | Tasks and projects (Vikunja, Plane, Huly, Kanboard) |
+| [video-surveillance.md](video-surveillance.md) | Camera/NVR (Frigate, ZoneMinder, Viseron, Shinobi) |
+| [vpn-remote.md](vpn-remote.md) | VPN and remote access (WireGuard, Headscale, NetBird, Guacamole) |
 
 ## Roadmap
 
