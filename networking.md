@@ -67,6 +67,31 @@ Cloud-native reverse proxy that auto-discovers services from Docker, Kubernetes,
 
 ---
 
+## Caddy
+
+| Field | Value |
+|-------|-------|
+| URL | https://caddyserver.com |
+| Source | https://github.com/caddyserver/caddy |
+| Deploy | docker, binary, package |
+| Image | `caddy` |
+| Resource | light (~50MB) |
+| Auth | none built-in (basicauth / forward_auth middleware) |
+| Reverse proxy | IS the reverse proxy |
+| Config | `Caddyfile` or JSON API |
+| Backup | snapshot `/data` (TLS certificates) + `Caddyfile` |
+| License | Apache-2.0 |
+| Maintained | active |
+
+Fast, memory-safe web server and reverse proxy written in Go with automatic HTTPS by default. Caddy obtains and renews TLS certificates from Let's Encrypt / ZeroSSL without manual configuration or certbot cron jobs.
+
+**Pick this if** you want the cleanest human-readable config syntax (`Caddyfile`), instant automatic TLS certificates, and a single lightweight binary.
+
+**vs NPM** — Caddy is config-as-code and requires zero UI/database overhead; NPM is best if you insist on a browser GUI.
+**vs Traefik** — Caddy has a vastly simpler config syntax for static files and standard reverse proxying; Traefik is better tuned for dynamic Kubernetes/Docker label discovery.
+
+---
+
 ## Pi-hole
 
 | Field | Value |

@@ -12,7 +12,7 @@ description: Workflow automation, job scheduling, and integration platforms
 | [n8n](#n8n) | docker, binary | medium (~256MB) | built-in, OIDC, LDAP | FSL-1.1-Apache-2.0 | active |
 | [Node-RED](#node-red) | docker, binary, npm | light (~150MB) | built-in (optional) | Apache-2.0 | active |
 | [Activepieces](#activepieces) | docker | medium (~512MB) | built-in, OIDC | MIT | active |
-| [Huginn](#huginn) | docker | medium (~512MB) | built-in | MIT | maintained |
+| [Huginn](#huginn) | docker | medium (~512MB) | built-in | MIT | maintenance |
 
 ---
 

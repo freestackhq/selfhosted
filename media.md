@@ -65,6 +65,31 @@ Polished media server with excellent client apps across all platforms. Requires 
 
 ---
 
+## Emby
+
+| Field | Value |
+|-------|-------|
+| URL | https://emby.media |
+| Source | proprietary (closed source core) |
+| Deploy | docker, binary, package |
+| Image | `emby/embyserver` |
+| Resource | medium (~500MB idle) |
+| Auth | built-in, LDAP |
+| Reverse proxy | ✓ |
+| Config | UI + XML config files |
+| Backup | snapshot `/config` |
+| License | proprietary |
+| Maintained | active |
+
+Feature-rich media server for streaming personal videos, music, live TV, and photos. Provides a self-hosted alternative to Plex with local user authentication, though hardware transcoding, DVR features, and mobile apps require Emby Premiere license.
+
+**Pick this if** you want a middle ground between Plex and Jellyfin: native local authentication and folder-level access control without mandatory cloud accounts.
+
+**vs Jellyfin** — Emby has slightly more polished first-party TV apps; Jellyfin is 100% free with no features locked behind a Premiere paywall.
+**vs Plex** — Emby works fully offline without external account dependencies for local logins; Plex relies heavily on plex.tv infrastructure.
+
+---
+
 ## Navidrome
 
 | Field | Value |

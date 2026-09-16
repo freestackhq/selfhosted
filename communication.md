@@ -57,7 +57,7 @@ Decentralized, end-to-end encrypted communication protocol with the Element clie
 | Reverse proxy | ✓ |
 | Config | UI admin panel + env vars |
 | Backup | MongoDB dump + uploads directory |
-| License | MIT |
+| License | MIT (core) / Commercial (Enterprise) |
 | Maintained | active |
 
 Full-featured Slack alternative with channels, DMs, threads, file sharing, video calls, and a marketplace of integrations. Supports omnichannel (live chat for websites), bots, and extensive admin controls. Mobile and desktop apps available.
@@ -83,7 +83,7 @@ Full-featured Slack alternative with channels, DMs, threads, file sharing, video
 | Resource | medium–heavy (~1GB+; scales with concurrent users) |
 | Auth | built-in (optional), JWT, LDAP |
 | Reverse proxy | ✓ |
-| Config | `.env` file + `config.js` (web) + Orosody config |
+| Config | `.env` file + `config.js` (web) + Prosody config |
 | Backup | stateless (only config to back up) |
 | License | Apache-2.0 |
 | Maintained | active |

@@ -22,9 +22,9 @@ description: Homepage dashboards, startpages, and service overview panels
 | Field | Value |
 |-------|-------|
 | URL | https://homarr.dev |
-| Source | https://github.com/ajnart/homarr |
+| Source | https://github.com/homarr-labs/homarr |
 | Deploy | docker |
-| Image | `ghcr.io/ajnart/homarr` |
+| Image | `ghcr.io/homarr-labs/homarr` |
 | Resource | medium (~256MB) |
 | Auth | built-in (users/groups), OIDC, LDAP |
 | Reverse proxy | ✓ |
